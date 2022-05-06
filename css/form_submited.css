@@ -1,0 +1,86 @@
+:root {
+  --main-color: #00cc90;
+  --black: #222;
+  --white: #fff;
+  --light-black: #777;
+  --light-white: #fff9;
+  --blue: #142136;
+  --dark-bg: rgba(0, 0, 0, 0.7);
+  --light-bg: #eee;
+  --border: 0.1rem solid var(--black);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3);
+}
+@keyframes fadeIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+html {
+  font-size: 62.5%;
+  background-color: var(--white);
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100vh;
+
+  background-color: #142136;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--light-bg);
+  width: 50%;
+  height: 80%;
+  padding: 3rem;
+}
+.container .icon {
+  height: 70%;
+  width: 100%;
+}
+.icon img {
+  width: 100%;
+  height: 100%;
+}
+.container .text {
+  /* width: 90%; */
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+  text-align: center;
+}
+.container .text p {
+  font-size: 1rem;
+  color: var(--light-black);
+}
+.container button {
+  all: unset;
+  font-size: 1.4rem;
+  cursor: pointer;
+  width: 50%;
+  margin: 0 auto;
+  padding: 1rem 10px;
+  text-align: center;
+  background-color: #00cc90;
+  border: 1px solid white;
+  transition: 0.3s;
+}
+.container button:hover {
+  background-color: white;
+  border: black 1px solid;
+}
